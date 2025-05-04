@@ -24,7 +24,7 @@ with st.sidebar:
         menu_icon="cast",
         default_index=0,
         styles={
-            "container": {"padding": "5px", "background-color": "#f0f2f6"},
+            "container": {"padding": "5px", "background-color": "#0e1117"},
             "icon": {"color": "blue", "font-size": "18px"},
             "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px"},
             "nav-link-selected": {"background-color": "#2e7bcf", "color": "white"}
@@ -33,32 +33,32 @@ with st.sidebar:
 
 # Dynamic page loading
 if selected == "Home":
-    import pages.Home as home
+    import page_of_sidebar.Home as home
     home.app()
 elif selected == "Executive Summary":
-    import pages.Executive_Summary as exec_sum
+    import page_of_sidebar.Executive_Summary as exec_sum
     exec_sum.app()
 elif selected == "Revenue Analysis":
-    import pages.Revenue_Analysis as revenue
+    import page_of_sidebar.Revenue_Analysis as revenue
     revenue.app()
 elif selected == "Cost Analysis":
-    import pages.Cost_Analysis as cost
+    import page_of_sidebar.Cost_Analysis as cost
     cost.app()
 elif selected == "Efficiency Analysis":
-    import pages.Efficiency_Analysis as efficiency
+    import page_of_sidebar.Efficiency_Analysis as efficiency
     efficiency.app()
 elif selected == "Quality Insights":
-    import pages.Quality_Insights as quality
+    import page_of_sidebar.Quality_Insights as quality
     quality.app()
 elif selected == "Supplier Performance":
-    import pages.Supplier_Performance as supplier
+    import page_of_sidebar.Supplier_Performance as supplier
     supplier.app()
 elif selected == "Transportation Insights":
-    import pages.Transportation_Insights as transport
+    import page_of_sidebar.Transportation_Insights as transport
     transport.app()
 elif selected == "Correlation Analysis":
-    import pages.Correlation_Analysis as correlation
+    import page_of_sidebar.Correlation_Analysis as correlation
     correlation.app()
 elif selected == "Cost Prediction":
-    import pages.Cost_Prediction as predict
+    import page_of_sidebar.Cost_Prediction as predict
     predict.app()
